@@ -1,16 +1,23 @@
-# provider3
+<p>refrence:https://pub.dev/packages/provider</p>
+<p>A wrapper around InheritedWidget to make them easier to use and more reusable.
 
-A new Flutter project.
+By using provider instead of manually writing InheritedWidget, you get:
 
-## Getting Started
+simplified allocation/disposal of resources
+lazy-loading
+a vastly reduced boilerplate over making a new class every time
+devtool friendly – using Provider, the state of your application will be visible in the Flutter devtool
+a common way to consume these InheritedWidgets (See Provider.of/Consumer/Selector)
+increased scalability for classes with a listening mechanism that grows exponentially in complexity (such as ChangeNotifier, which is O(N) for dispatching notifications).</p>
+<p>
+    This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 
-This project is a starting point for a Flutter application.
+    dependencies:
+    provider: ^6.1.2
+    Alternatively, your editor might support flutter pub get. Check the docs for your editor to learn more.
 
-A few resources to get you started if this is your first Flutter project:
+    Import it
+    Now in your Dart code, you can use:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    import 'package:provider/provider.dart';
+</p>
