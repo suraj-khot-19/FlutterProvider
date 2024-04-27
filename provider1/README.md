@@ -1,1 +1,1 @@
-# Creating Counter app without using state management concept which auto reload all UI in the app when state changes which cause Slow App Speed. Also it takes too time when state changes.
+<p>Creating Counter app without using state management concept which auto reload all UI in the app when state changes which cause Slow App Speed. Also it takes too time when state changes.</p>
